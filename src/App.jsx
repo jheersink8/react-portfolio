@@ -1,10 +1,5 @@
-function App() {
-<h1>hi</h1>
-  return (
-    <>
-      hi
-    </>
-  )
-}
+import Container from "./components/Container"
 
-export default App
+const App = () => <Container />;
+
+export default App;
