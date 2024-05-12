@@ -1,0 +1,46 @@
+:root{
+    --background-primary: #403D39;
+    --nav-background: #252422;
+    --emphasis: #EB5E28;
+    --font-primary: #FFFCF2;
+    --hover: #CCC5B9;
+}
+
+/* GLOBAL STYLES */
+*{
+    font-family: "Palanquin Dark", sans-serif;
+   background-color: var(--background-primary); 
+   color: var(--font-primary);
+}
+
+.brand{
+    color: var(--font-primary);
+    font-size: 1.6rem;
+}
+
+/* NAVIGATION STYLES */
+.nav {    
+    background-color: var(--nav-background);
+}
+
+.active {
+    background-color: var(--emphasis) !important;
+    color: var(--font-primary);
+}
+
+.nav-fill .nav-link {
+    color: var(--emphasis); 
+    background-color: var(--nav-background);
+}
+
+.nav-fill .nav-link:hover {
+    color: var(--hover); 
+}
+
+.nav-item{
+    background-color: var(--nav-background);
+}
+
+.nav-neg{
+    background-color: var(--background-primary);
+}

@@ -1,3 +1,5 @@
+import './styles/Style.css';
+
 import Navbar from './Navbar';
 import About from './pages/About';
 import Contact from './pages/Contact';

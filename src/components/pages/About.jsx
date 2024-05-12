@@ -2,7 +2,7 @@ export default function About() {
     return (
         <div>
             <h1>Hello. My name is Jordan Heersink. Thank you so much for visiting my site! Please scroll down to learn more about me, and use the navigation buttons for more of my web development resources. </h1>
-            <img src='src\components\assets\headshot.PNG' />
+            <img src='src\assets\headshot.PNG' />
             <p>I am a full-stack web developer seeking to apply my eight years of tech support management expertise to the web. After spending time learning how end users think and knowing what they look for, I want to hone my web development skills into creating a user experience that aligns with their wants and needs. I am enthusiastic about technology and always eager to learn more. I have a BA in Information Systems Management, a master's degree in Business Administration, and I recently acquired a web development certificate through a rigorous course at Denver University. I'm looking to bring my commitment to excellence and hard work ethic to a company and become a valuable asset.
             </p>
             <h2>My Milestones:</h2>

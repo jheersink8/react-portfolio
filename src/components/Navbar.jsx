@@ -1,9 +1,11 @@
+
+
 function Navbar({ currentPage, changePage }) {
     return (
         <>
 
-            <ul className='m-1 nav nav-pills nav-fill'>
-                <li  className='nav-item'> Jordan Heersink </li>
+            <ul className='p-1 nav nav-pills nav-fill'>
+                <li className='nav-item brand'> Jordan Heersink </li>
                 <li className='nav-item'>
                     <a href='#about' onClick={() => changePage('About Me')}
                         className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}>
