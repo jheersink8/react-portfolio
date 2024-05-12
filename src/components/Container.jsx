@@ -3,6 +3,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import Footer from './Footer';
 import { useState } from 'react';
 
 export default function Container() {
@@ -26,10 +27,8 @@ export default function Container() {
         <div>
             <Navbar currentPage={currentPage} changePage={changePage} />
             <main className="m-4">{renderPage()}</main>
-            {/* <About />
-        <Contact />
-        <Portfolio />
-        <Resume /> */}
+            <Footer />
+
         </div>
     );
 }
