@@ -1,4 +1,5 @@
 import './styles/Style.css';
+import './pages/About.css';
 
 import Navbar from './Navbar';
 import About from './pages/About';
