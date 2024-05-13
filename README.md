@@ -9,3 +9,5 @@ Currently, two official plugins are available:
 
 
 Give credit to timeline (https://www.bootdey.com/snippets/view/timeline-events)
+
+Give credit to svgs (https://www.svgrepo.com/svg/508923/jquery)

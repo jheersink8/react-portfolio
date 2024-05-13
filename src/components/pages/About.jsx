@@ -1,6 +1,8 @@
 import TimelineEvents from "../TimelineEvents";
 import "./About.css";
 import timelineEvents from "../tools/TimelineEvents";
+import { github, html, css, bootstrap, javascript, jQuery, webServicesAPIs, nodeJS, npm, postgreSQL, mongoDB, react } from "../tools/icons";
+
 
 export default function About() {
 
@@ -55,47 +57,58 @@ export default function About() {
 
             <div className="container emphasis py-5 my-4 border-top">
                 <h3 className="about-header">My Skills:</h3>
-                <p className="common">These are some of the items in my toolbelt.</p>
-                <ul>
-                    <li>Git</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>Web Services APIs</li>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>PostgreSQL</li>
-                    <li>MongoDB</li>
-                    <li>React</li>
-                </ul>
+                <p className="common px-3">These are some of the items in my toolbelt.</p>
+                <div className="justify-content-center d-flex flex-wrap">
+                    <div className="row">
+                        <div className="col icon-list">{github}</div>
+                        <div className="col icon-list">{html}</div>
+                        <div className="col icon-list">{css}</div>
+                        <div className="col icon-list">{bootstrap}</div>
+                        <div className="col icon-list">{javascript}</div>
+                        <div className="col icon-list">{jQuery}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col icon-list">{webServicesAPIs}</div>
+                        <div className="col icon-list">{nodeJS}</div>
+                        <div className="col icon-list">{npm}</div>
+                        <div className="col icon-list">{postgreSQL}</div>
+                        <div className="col icon-list">{mongoDB}</div>
+                        <div className="col icon-list">{react}</div>
+                    </div>
+                </div>
             </div>
 
             <div className="container emphasis py-5 my-4 border-top">
                 <h3 className="about-header">What's Next for Me:</h3>
-                <p>These are some of the things I want to learn next.</p>
-                <ul>
-                    <li>Programming Languages</li>
-                    <ul>
-                        <li>C#</li>
-                        <li>Python</li>
-                        <li>PHP</li>
-                        <li>TypeScript</li>
-                    </ul>
-                    <li>Libraries & Frameworks</li>
-                    <ul>
-                        <li>D3</li>
-                        <li>Next.js</li>
-                        <li>Tailwind CSS</li>
-                    </ul>
-                    <li>Tools & Platforms</li>
-                    <ul>
-                        <li>AWS</li>
-                        <li>GraphQL Playground</li>
-                        <li>Docker</li>
-                    </ul>
-                </ul>
+                <p className="common px-3">These are some of the things I want to explorer next.</p>
+                <br></br>
+                <div className="row text-center">
+                    <div className="col-md-4">
+                        <h4 className="future-title">Programming Languages</h4>
+                        <ul className="future-list">
+                            <li>C#</li>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                    <div className="col-md-4">
+                        <h4 className="future-title">Libraries & Frameworks</h4>
+                        <ul className="future-list">
+                            <li>D3</li>
+                            <li>Next.js</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div className="col-md-4">
+                        <h4 className="future-title">Tools & Platforms</h4>
+                        <ul className="future-list">
+                            <li>AWS</li>
+                            <li>GraphQL Playground</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     )

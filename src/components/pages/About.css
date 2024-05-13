@@ -122,15 +122,7 @@ body {
     }
 }
 
-.rtl .timeline {
-    border-left: 0;
-    text-align: right;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-right: 30px solid red;
-}
+
 
 .rtl .timeline .event::before {
     left: 0;
@@ -140,4 +132,33 @@ body {
 .rtl .timeline .event::after {
     left: 0;
     right: -55.8px;
+}
+
+/* ICON STYLE */
+.svg-group{
+    border: 2px solid var(--hover);
+    background-color: var(--emphasis);
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    margin-top: 20px; 
+}
+
+.icon-list{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+
+.future-list li{
+    list-style: none;
+    font-size: larger;
+    color: var(--hover);
+}
+
+.future-title{
+    color:var(--emphasis);
 }
