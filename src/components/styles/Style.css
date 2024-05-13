@@ -1,4 +1,4 @@
-:root{
+:root {
     --background-primary: #403D39;
     --nav-background: #252422;
     --emphasis: #EB5E28;
@@ -7,19 +7,24 @@
 }
 
 /* GLOBAL STYLES */
-*{
+* {
     font-family: "Palanquin Dark", sans-serif;
-   background-color: var(--background-primary); 
-   color: var(--font-primary);
+    background-color: var(--background-primary);
+    color: var(--font-primary);
 }
 
-.brand{
+.brand {
     color: var(--font-primary);
     font-size: 1.6rem;
 }
 
+.emphasis {
+    color: var(--emphasis);
+    background-color: transparent;
+}
+
 /* NAVIGATION STYLES */
-.nav {    
+.nav {
     background-color: var(--nav-background);
 }
 
@@ -29,18 +34,41 @@
 }
 
 .nav-fill .nav-link {
-    color: var(--emphasis); 
+    color: var(--emphasis);
     background-color: var(--nav-background);
 }
 
 .nav-fill .nav-link:hover {
-    color: var(--hover); 
+    color: var(--hover);
 }
 
-.nav-item{
+.nav-item {
     background-color: var(--nav-background);
 }
 
-.nav-neg{
+.nav-neg {
     background-color: var(--background-primary);
 }
+
+/* ABOUT ME STYLES */
+.fade-in1 {
+    opacity: 0;
+    animation: fadeInAnimation .8s ease-in-out forwards;
+}
+
+.fade-in2 {
+    opacity: 0;
+    animation: fadeInAnimation .8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
