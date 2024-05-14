@@ -53,17 +53,18 @@ export default function Contact() {
             <p className='common mx-3'>I would love to hear from you! Use the form below to send me a message. </p>
 
 
-            <form className='contact-form' onSubmit={formSubmit}>
+            <form className='contact-form needs-validation'  onSubmit={formSubmit}>
 
                 <div className='form-group'>
-                    <label for='name' className='emphasis form-title mb-1 mt-4'>Name:</label>
+                    <label className='emphasis form-title mb-1 mt-4'>Name:</label>
                     <input
                         value={name}
                         name='name'
                         onChange={inputChange}
                         type='text'
                         className='form-control mx-3 mt-2'
-                        placeholder='Tell me your name' />
+                        placeholder='Tell me your name'
+                        />
                 </div>
 
                 <div className='form-group'>
@@ -93,7 +94,7 @@ export default function Contact() {
             </form>
             {errorMessage && (
                 <div>
-                    <p className='error-text'>{errorMessage}</p>
+                    <p className='error-text emphasis'>{errorMessage}</p>
                 </div>
             )}
         </div>

@@ -57,6 +57,18 @@
     background-color: var(--emphasis)!important;
 }
 
+
+
+@keyframes flash {
+    0% { color: var(--emphasis); } /* Start with red color */
+    50% { color: var(--hover); } /* Flash to yellow color */
+    100% { color: var(--emphasis); } /* Return to red color */
+  }
+
+.flash {
+    animation: flash .75s 1;
+}
+
 /* FOOTER STYLES */
 
 
@@ -68,3 +80,5 @@
 .form-title{
     font-size: x-large;
 }
+
+
