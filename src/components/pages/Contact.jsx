@@ -39,7 +39,7 @@ export default function Contact() {
             setErrorMessage('Message is required');
             return;
         }
-      
+
 
         setName('');
         setEmail('');
@@ -48,52 +48,54 @@ export default function Contact() {
     };
 
     return (
-        <div>
-            <p>I would love to hear from you! Use the form below to send me a message. </p>
+        <div className='container'>
+            <h2 className='emphasis mt-5'> Contact Me</h2>
+            <p className='common mx-3'>I would love to hear from you! Use the form below to send me a message. </p>
 
 
             <form className='contact-form' onSubmit={formSubmit}>
 
                 <div className='form-group'>
-                    <label for='name'>Name:</label>
+                    <label for='name' className='emphasis form-title mb-1 mt-4'>Name:</label>
                     <input
                         value={name}
                         name='name'
                         onChange={inputChange}
                         type='text'
-                        className='form-control'
+                        className='form-control mx-3 mt-2'
                         placeholder='Tell me your name' />
                 </div>
 
                 <div className='form-group'>
-                    <label for='email'>Email:</label>
+                    <label for='email' className='emphasis form-title mb-1 mt-4'>Email:</label>
                     <input
                         value={email}
                         name='email'
                         onChange={inputChange}
                         type='text'
-                        className='form-control'
+                        className='form-control mx-3 mt-2'
                         placeholder='How can I contact you?' />
                 </div>
 
                 <div className='form-group'>
-                    <label for='message'>Message:</label>
+                    <label for='message' className='emphasis form-title mb-1 mt-4' >Message:</label>
                     <textarea
                         value={message}
                         name='message'
                         onChange={inputChange}
                         type='text'
-                        className='form-control'
-                        placeholder='What do you want to tell me?' />
+                        className='form-control  mx-3 mt-2'
+                        placeholder='What would you like to say?' 
+                        rows='5'/>
                 </div>
 
-                <button type='submit' className='btn btn-primary my-1'>Submit</button>
+                <button type='submit' className='btn btn-submit my-5 mx-3'>Submit</button>
             </form>
-        {errorMessage && (
-            <div>
-                <p className='error-text'>{errorMessage}</p>
-            </div>
-        )}
+            {errorMessage && (
+                <div>
+                    <p className='error-text'>{errorMessage}</p>
+                </div>
+            )}
         </div>
     )
 }

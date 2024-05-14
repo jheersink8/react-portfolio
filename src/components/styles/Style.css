@@ -52,6 +52,10 @@
 }
 
 
+/* CONTACT FORM STYLES */
+.btn-submit{
+    background-color: var(--emphasis)!important;
+}
 
 /* FOOTER STYLES */
 
@@ -59,4 +63,8 @@
 
 .footer-icon:hover {
     fill: var(--hover);
+}
+
+.form-title{
+    font-size: x-large;
 }
