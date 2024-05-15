@@ -1,6 +1,6 @@
-import TimelineEvents from "../TimelineEvents";
+import TimelineEvents from "../tools/TimelineEvents.jsx";
 import "./About.css";
-import timelineEvents from "../tools/TimelineEvents";
+import timelineEvents from "../tools/TimelineEvents.js";
 import { github, html, css, bootstrap, javascript, jQuery, webServicesAPIs, nodeJS, npm, postgreSQL, mongoDB, react } from "../tools/icons";
 
 
