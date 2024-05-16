@@ -1,32 +1,5 @@
-/* ABOUT ME STYLES */
-.intro {
-    font-size: 2rem;
-    line-height: 1.5;
-}
-
-.fade-in1 {
-    opacity: 0;
-    animation: fadeInAnimation .8s ease-in-out forwards;
-}
-
-.fade-in2 {
-    opacity: 0;
-    animation: fadeInAnimation .8s ease-in-out forwards;
-    animation-delay: 0.5s;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 /* COMMON TEXT STYLE */
-.common{
+.common {
     font-size: 1.5rem;
     line-height: 1.5;
 }
@@ -36,7 +9,7 @@ body {
     margin-top: 20px;
 }
 
-.content{
+.content {
     border-left: 4px solid var(--emphasis);
 }
 
@@ -135,16 +108,16 @@ body {
 }
 
 /* ICON STYLE */
-.svg-group{
+.svg-group {
     border: 2px solid var(--hover);
     background-color: var(--emphasis);
     height: 120px;
     width: 120px;
     padding: 10px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.icon-list{
+.icon-list {
     display: flex;
     justify-content: space-around;
 
@@ -153,12 +126,79 @@ body {
 
 
 
-.future-list li{
+.future-list li {
     list-style: none;
     font-size: larger;
     color: var(--hover);
 }
 
-.future-title{
-    color:var(--emphasis);
+.future-title {
+    color: var(--emphasis);
+}
+
+
+
+
+/* SCROLL ANIMATIONS */
+.scroll-watcher {
+    height: 10px;
+    margin:0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--emphasis);
+    width: 100%;
+    scale: 0 1;
+    transform-origin: top left;
+    animation: scroll-watcher linear forwards;
+    animation-timeline: scroll();
+}
+
+  
+
+.intro {
+    /* STYLES */
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: 80px;
+    animation: fadeInScrollOut1 .8s ease-in-out forwards;
+}
+
+@media (min-width: 768px) {
+    .intro {
+        margin-bottom: 100px;
+    }
+}
+
+.scrollTimeline{
+    animation: fadeInScrollTimeline 1s linear forwards;
+    animation-timeline: view();
+    animation-range: exit -150px;
+}
+
+.scroll {
+    animation: fadeInScroll 1s linear forwards;
+    animation-timeline: view();
+    animation-range: exit -100px;
+}
+
+@keyframes fadeInScroll {
+    to {
+        opacity: 0;
+        scale: .9;
+    }
+}
+
+@keyframes scroll-watcher {
+    to {
+        scale: 1 1;
+    }
+}
+
+@keyframes fadeInScrollTimeline {
+    to {
+        opacity: 0;
+        scale: 1;
+    }
 }
