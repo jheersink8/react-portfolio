@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 export default function Container() {
     const [currentPage, setCurrentPage] = useState('About Me');
-
+// Switch statement to render the page based on the current page
     const renderPage = () => {
         switch (currentPage) {
             case 'About Me':
@@ -25,7 +25,7 @@ export default function Container() {
         };
     }
     const changePage = (page) => setCurrentPage(page);
-
+// Main container for the app
     return (
         <div>
             <Navbar currentPage={currentPage} changePage={changePage} />

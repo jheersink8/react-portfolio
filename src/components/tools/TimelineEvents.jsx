@@ -1,3 +1,4 @@
+// Component for the timeline events
 function TimelineEvents(props) {
     return (
         <ul className="timeline">

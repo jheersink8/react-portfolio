@@ -1,3 +1,4 @@
+// Component for displaying the projects on the portfolio page
 function Projects(props) {
     return (
         <div className="row">

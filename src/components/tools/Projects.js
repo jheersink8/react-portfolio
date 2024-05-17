@@ -1,3 +1,4 @@
+// Array of objects that contain the information for each project. This information is used to populate the Projects component.
 const projects = [{
     id: 1,
     title: 'The Social Suitcase',

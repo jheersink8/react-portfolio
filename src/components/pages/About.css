@@ -161,7 +161,7 @@ body {
     /* STYLES */
     font-size: 2rem;
     line-height: 1.5;
-    margin-top: 80px;
+    margin-top: 90px;
     animation: fadeInScrollOut1 .8s ease-in-out forwards;
 }
 
@@ -180,7 +180,7 @@ body {
 .scroll {
     animation: fadeInScroll 1s linear forwards;
     animation-timeline: view();
-    animation-range: exit -100px;
+    animation-range: exit -90px;
 }
 
 @keyframes fadeInScroll {

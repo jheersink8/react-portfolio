@@ -1,3 +1,4 @@
+// Component for the contact page
 import { validateEmail } from '../../utils/helpers';
 import { useState } from 'react';
 
@@ -8,6 +9,7 @@ export default function Contact() {
     const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
+    // Function to handle input changes
     const inputChange = (e) => {
         const { target } = e;
         const inputType = target.name;
@@ -23,6 +25,7 @@ export default function Contact() {
         }
     };
 
+    // Function to handle form submission
     const formSubmit = (e) => {
         e.preventDefault();
         if (!name) {
@@ -40,7 +43,7 @@ export default function Contact() {
             return;
         }
 
-
+// Clear the form after submission
         setName('');
         setEmail('');
         setMessage('');
@@ -91,7 +94,9 @@ export default function Contact() {
                 </div>
 
                 <button type='submit' className='btn btn-submit my-5 mx-3'>Submit</button>
+            
             </form>
+            
             {errorMessage && (
                 <div>
                     <p className='error-text emphasis'>{errorMessage}</p>

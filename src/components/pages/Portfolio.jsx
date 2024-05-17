@@ -1,3 +1,5 @@
+// Component for the portfolio page
+
 import "./Portfolio.css";
 import Projects from "../tools/Projects.jsx";
 import projects from "../tools/Projects.js";

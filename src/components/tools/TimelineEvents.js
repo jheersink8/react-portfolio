@@ -1,3 +1,4 @@
+// Array of objects that contain the information for each event. This information is used to populate the Timeline component.
 const timelineEvents = [{
         id: 1,
         date: '2010',

@@ -1,6 +1,6 @@
 import { emailFooter, githubFooter, linkedinFooter } from './tools/icons.jsx';
 export default function Footer() {
-
+// Portfolio footer with links to GitHub, LinkedIn, and email
     return (
 
         <div className="container">

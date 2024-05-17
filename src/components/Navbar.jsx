@@ -1,5 +1,5 @@
 
-
+// Portfolio navbar with links to About Me, Portfolio, Contact, and Resume
 function Navbar({ currentPage, changePage }) {
     return (
         <>
