@@ -2,7 +2,7 @@
 
 GitHub Repo: https://github.com/jheersink8/react-portfolio
 
-Deployed Site: 
+Deployed Site: https://main--dancing-malabi-ac1b15.netlify.app/#about 
 
 ## Description
 
