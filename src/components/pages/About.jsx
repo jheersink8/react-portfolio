@@ -25,7 +25,7 @@ export default function About() {
                     <div className="py-5 col-md-5 align-content-center text-center order-md-1 order-2">
                         <img
                             className="img-fluid rounded border intro scroll"
-                            src='..\public\images\headshot.PNG'
+                            src='\images\headshot.PNG'
                             alt='Jordan Heersink headshot'
                             title='I recently shaved off my fro  :( '
                             width='60%'
